@@ -1,0 +1,142 @@
+/* =============
+ table of contents
+===============
+ 
+1. global styles
+2. page
+ 
+*/
+ 
+  
+/* ===============
+   1. global style
+================ */
+
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #00bbff, #007092);
+	background-size: 400% 400%;
+	height: 100vh;
+  color: white;
+  font-family: monospace;
+}
+
+
+
+h1{
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 40px 0;
+}
+
+.task{
+  width: 90vh;
+  padding: 18px;
+  margin: 25px auto;
+  border-radius: 8px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba( 70, 70, 70, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba(41, 42, 59, 0.37);
+  backdrop-filter: blur( 15px );
+  -webkit-backdrop-filter: blur( 15px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-bottom: 2.5px solid white;
+}
+
+.icon{
+  font-size: 22px;
+  cursor: pointer;
+}
+.icon-angry2{
+  color: rgb(255, 255, 0);
+}
+.icon-angry2:hover{
+  font-size: 25px;
+}
+
+.icon-trash{
+  opacity: 0.6;
+  margin-left: 80px;
+
+}
+.icon-trash:hover{
+  opacity: 1;
+  font-size: 25px;
+}
+
+.icon-star{
+  opacity: 0.6;
+}
+.icon-star:hover{
+  color: orange;
+  opacity: 1;
+  font-size: 25px;
+}
+
+button{
+  all: unset;
+}
+h3{
+  font-size: 25px;
+  text-align: center;
+  margin-top: 170px;
+}
+form{
+  text-align: center;
+  margin-top: -145px;
+}
+input{
+  padding: 10px 20px;
+  border-radius: 6px;
+  width: 35vh;
+  font-size: 18px;
+}
+.icon-upload{
+ font-size: 36px;
+ position: relative;
+ top: 9px;
+ left: 3px;
+}
+h3{
+  padding-bottom: 50px;
+}
+
+/* for js */
+.dn{
+  display: none;
+}
+
+.icon-heart{
+  color: red;
+}
+.icon-heart:hover{
+  font-size: 25px;
+  transition: 0.2s;
+}
+.finish{
+  text-decoration-line:line-through;
+  text-decoration-style: wavy;
+}
+.orange{
+  color: orange;
+  opacity: 1;
+}
+
+/*media query */
+@media(max-width:640px){
+  .task{
+    width: 40vh;
+  }
+
+}
